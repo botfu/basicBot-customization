@@ -56,9 +56,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        botName: "Farofa's Bot",
+        language: "portuguese",
+        chatLink: "https://rawgit.com/botfu/FarofaBot/master/lang/pt-BR.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
@@ -66,7 +66,7 @@
         autoskip: false,
         smartSkip: true,
         cmdDeletion: true,
-        maximumAfk: 120,
+        maximumAfk: 60,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -120,6 +120,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/botfu/FarofaBot/master/basicBot.js", extend);
 
 }).call(this);
