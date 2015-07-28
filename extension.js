@@ -36,14 +36,14 @@
          */
 
         bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
+            command: ['fu', 'tau'],  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me BAN?!?!?");
                 }
             }
         };
@@ -61,7 +61,7 @@
         chatLink: "https://rawgit.com/botfu/FarofaBot/master/lang/pt-BR.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         autowoot: true,
         autoskip: false,
         smartSkip: true,
@@ -77,7 +77,7 @@
         cycleGuard: true,
         maximumCycletime: 10,
         voteSkip: false,
-        voteSkipLimit: 10,
+        voteSkipLimit: 20,
         historySkip: false,
         timeGuard: true,
         maximumSongLength: 10,
@@ -98,16 +98,16 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
-        filterChat: true,
+        motd: "!roulette",
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "https://facebook.com/farofadasdivaspop",
         youtubeLink: null,
-        website: null,
+        website: "http://farofa-pop.blogspot.com.br",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
